@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+.btn-primary {
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 180px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    background: #FF900E;
+    cursor: pointer;
+    transition: .2s font-size ease, .2s background-color ease-in-out;
+}
+.btn-primary:hover {
+    background-color: white;
+    border: 2px solid #FF900E;
+    color: #131313;
+    font-size: 1.4rem;
+}
+header {
+    max-width: 1920px;
+    background: rgba(255, 144, 14, 0.10);
+    width: 100%;
+}
+.container {
+    padding: 5vh 10vw;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: var(--dark-01, #131313);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.menu {
+    display: flex;
+    list-style: none;
+    text-transform: capitalize;
+}
+.list {
+    margin-right: 2vw;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--dark-02, #424242);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+}
+.menu a:hover {
+    cursor: pointer;
+    border-bottom:4px solid #FF900E;
+}
+.banner {
+    display: grid;
+    gap: 5vh;
+    grid-template-rows: repeat(1,1fr);
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 15vh;
+    place-items: center;
+    
+}
+
+.banner-title {
+    color: var(--dark-01, #131313);
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-text {
+    color: var(--dark-03, #727272);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem; /* 162.5% */
+}
+.banner-img {
+    width: 100%;
+    margin-top: 10vh;
+}
+.banner-img img {
+    width: 100%;
+}
+@media screen and (max-width: 576px) {
+    .container{
+        padding: 10px 20px;
+    }
+    .navbar {
+        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu {
+        margin-top: 20px;
+        justify-content: space-between;
+        width: 300px;
+    }
+    .banner {
+        padding-top: 10vw;
+    }
+    .banner-title {
+        font-size: 3rem;
+    }
+    .banner-img {
+        margin-top: 10vw;
+    }
+
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container{
+        padding: 5vw 5vh;
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu {
+        margin-top: 20px;
+    }
+    .banner {
+        padding-top: 5vh;
+    }
+}
